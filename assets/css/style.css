@@ -25,9 +25,9 @@ header {
 }
 
 .container2 {
-    width: 900px;
+    width: 876px;
     margin: 20px auto;
-    padding: 30px;
+    padding: 40px;
     background-color: #ffffff;
     border-style: solid;
     border-width: 2px;
@@ -67,6 +67,19 @@ header {
 
 p {
     line-height: 36px;
+}
+
+a {
+    padding: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #777777;
+}
+
+a:visited {
+    color: #777777;
 }
 
 footer {
