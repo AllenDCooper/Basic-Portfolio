@@ -1,11 +1,12 @@
 /* styles for sticky footer */
 html {
     height: 100%;
-    margin-bottom: -180px;
 }
 
 .wrapper {
     min-height: 100%;
+    margin-bottom: -100px;
+    overflow: scroll;
 }
 
 /* styles for general body */
@@ -83,7 +84,7 @@ li {
 
 section {
     width: 878px;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
     padding: 20px 40px 40px 40px;
     background-color: #ffffff;
     border-style: solid;
@@ -206,6 +207,10 @@ img {
 }
 
 /* styles for the footer */
+
+.push {
+    height: 100px;
+}
 
 footer {
     background-color: #666666;
