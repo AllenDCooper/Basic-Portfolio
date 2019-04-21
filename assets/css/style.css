@@ -11,12 +11,21 @@ h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header {
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding: 30px 0px 30px 0px;
+}
+
+nav {
     background-color:#ffffff;
     border-bottom-style: solid;
     border-width: 2px;
     border-color: #cccccc;
-    margin: 0 auto;
+    min-width: 960px;
 }
 
 .container1 {
@@ -24,13 +33,28 @@ header {
     margin: 0 auto;
 }
 
+li {
+    display: inline-block;
+}
+
+#centerLink {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-left-color: #dddddd;
+    border-right-color: #dddddd;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
+}
+
 .container2 {
-    width: 876px;
-    margin: 20px auto;
-    padding: 40px;
+    width: 878px;
+    margin: 40px auto;
+    padding: 20px 40px 40px 40px ;
     background-color: #ffffff;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: #dddddd;
 }
 
@@ -38,12 +62,12 @@ header {
     background-color: #4aaaa5;
     color: white;
     float: left;
-    padding: 0px 30px;
+    padding: 0px 40px;
 }
 
 .headerRight {
     float: right;
-    margin: 30px;
+    margin: 30px 0px 30px 30px;
 }
 
 .clearfix:after {
@@ -54,27 +78,33 @@ header {
     clear: both;
     }
 
-.floatLeft {
-    float: left;
-    margin-right: 30px;
-    margin-top: 10px;
-}
-
-.aboutMe {
+.sectionHead {
     color: #4aaaa5;
-    margin: 0px 0px 20px, 0px;
+    padding-bottom: 30px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #dddddd;
+    margin-bottom: 30px;
 }
 
 p {
     line-height: 36px;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p + p {
+    margin-top: 10px;
 }
 
 a {
-    padding: 10px;
+    color: #777777;
 }
 
 a:link {
     text-decoration: none;
+    border: none;
     color: #777777;
 }
 
@@ -82,15 +112,90 @@ a:visited {
     color: #777777;
 }
 
+form {
+    margin: 0 auto;
+}
+
+form div + div {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 878px;
+    padding: 10px;
+}
+
+button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border-style: none;
+    padding: 8px 20px;
+}
+
+input::placeholder {
+    color: #777777;
+}
+
+textarea {
+    height: 200px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container3 {
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    margin: 0px 20px 20px 0px;
+}
+
+img {
+    width: 300px;
+    height: 100%;
+}
+
+.photoTitle {
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: 15px;
+    width: 300px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 15px 0px;
+}
+
+.photoTitle:link {
+    color: #ffffff;
+}
+
+.photoTitle:visited {
+    color: #777777;
+}
+
+#headShot {
+    float: left;
+    margin: 10px 30px 5px 0px;
+    width: 230px;
+    height: 100%;
+}
+
 footer {
     background-color: #666666;
     border-top-style: solid;
     border-width: 10px;
     border-color: #4aaaa5;
-    position: fixed;
     bottom: 0px;
     width: 100%;
     color: white;
     text-align: center;
     height: 50px;
+    padding-top: 40px;
+    min-width: 960px;
 }
