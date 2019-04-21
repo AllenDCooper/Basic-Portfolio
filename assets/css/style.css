@@ -1,15 +1,14 @@
-/* styles for general body */
-html body {
+/* styles for sticky footer */
+html {
     height: 100%;
-    margin: 0;
-    margin-bottom: -100px;
+    margin-bottom: -180px;
 }
 
 .wrapper {
     min-height: 100%;
-
 }
 
+/* styles for general body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
@@ -85,12 +84,11 @@ li {
 section {
     width: 878px;
     margin: 40px auto;
-    padding: 20px 40px 40px 40px ;
+    padding: 20px 40px 40px 40px;
     background-color: #ffffff;
     border-style: solid;
     border-width: 1px;
     border-color: #dddddd;
-    clear: both;
 }
 
 .sectionHead {
@@ -214,7 +212,6 @@ footer {
     border-top-style: solid;
     border-width: 8px;
     border-color: #4aaaa5;
-    bottom: 0px;
     width: 100%;
     padding-top: 40px;
     height: 52px; 
@@ -223,6 +220,3 @@ footer {
     min-width: 960px;
 }
 
-.push {
-    height: 100px;
-}
